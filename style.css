@@ -46,6 +46,12 @@ input {
   border-radius: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -66,7 +72,7 @@ body {
 }
 
 .header_box {
-  height: 95vh;
+  height: 110vh;
   background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("./img/pexels-mehmet.jpg") center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
@@ -120,6 +126,10 @@ body {
   border: none;
 }
 
+.about {
+  margin-bottom: 54px;
+}
+
 .about_wrapper_content {
   max-width: 100%;
   display: flex;
@@ -167,4 +177,70 @@ body {
   line-height: 140%;
   letter-spacing: 2px;
   color: var(--text-color);
+}
+
+.about_link {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #777777;
+}
+
+.about_link::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #BA8554;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.about_img {
+  border-radius: 10px;
+}
+
+.about_img_box {
+  position: relative;
+}
+
+.about_img_box_two {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 5;
+}
+
+.about_img_box_three {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  z-index: 2;
+}
+
+.about_card {
+  height: 110vh;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("./img/pexels-julia-volk.jpg") center/cover no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
+          clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
+}
+
+.about_card_wrapper {
+  padding-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_card_list {
+  display: flex;
+  gap: 60px;
+}
+
+.about_card_item {
+  max-width: 240px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
