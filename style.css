@@ -61,7 +61,7 @@ body {
 .conteiner {
   max-width: 1340px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -72,7 +72,6 @@ body {
 }
 
 .header_box {
-  height: 110vh;
   background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("./img/pexels-mehmet.jpg") center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
@@ -82,6 +81,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  padding-top: 50px;
 }
 
 .logo_img {
@@ -90,6 +90,7 @@ body {
 
 .header_wrapper {
   text-align: center;
+  padding-bottom: 150px;
 }
 
 .hero_title {
@@ -219,15 +220,44 @@ body {
   z-index: 2;
 }
 
+.about_card_item {
+  padding: 29px 25px;
+}
+
+.about_card_img {
+  padding-bottom: 10px;
+}
+
+.about_card_titel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #777777;
+  padding-bottom: 10px;
+}
+
+.about_card_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #777777;
+  padding-bottom: 10px;
+}
+
 .about_card {
-  height: 110vh;
   background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("./img/pexels-julia-volk.jpg") center/cover no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
-          clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
+  -webkit-clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 80%);
 }
 
 .about_card_wrapper {
-  padding-top: 15%;
+  padding-top: 25%;
+  padding-bottom: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,4 +273,232 @@ body {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   text-align: center;
+}
+
+.menu_wrapper {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.menu_img {
+  width: 100%;
+}
+
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.menu_text_group {
+  text-align: center;
+  padding: 25px 50px 50px 50px;
+}
+
+.menu_title {
+  padding-bottom: 80px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 10px;
+  background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu_sub_title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-decoration-line: underline;
+  color: #777777;
+}
+
+.menu_item {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  max-width: 341px;
+}
+
+.menu_btn {
+  margin: 0 auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+.review {
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("./img/review.jpg") center/cover no-repeat;
+}
+
+.review_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.review_title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 10px;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.review_list {
+  margin-bottom: 80px;
+}
+
+.review_item {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-clip-path: polygon(16% 0, 100% 0%, 84% 100%, 0% 100%);
+          clip-path: polygon(16% 0, 100% 0%, 84% 100%, 0% 100%);
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-bottom: 50px;
+  gap: 40px;
+}
+
+.review_item_img_wrapper {
+  max-width: 167px;
+}
+
+.review_sub_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.review_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #777777;
+}
+
+.menu_btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: #777777;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 21px;
+  margin: 0 auto;
+}
+
+.booking {
+  background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+}
+
+.booking_wrapper {
+  display: flex;
+  padding: 100px;
+  position: relative;
+}
+
+.booking_content {
+  padding-top: 50px;
+  padding-right: 150px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 3.24%, rgba(255, 255, 255, 0.9) 88.76%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 58% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 58% 100%, 0% 100%);
+}
+
+.booking_title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 10px;
+  background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-bottom: 30px;
+}
+
+.booking_box_img {
+  max-width: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), center/cover no-repeat;
+  -webkit-clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.booking_img {
+  width: 100%;
+}
+
+.footer_conteiner {
+  background: #333333;
+}
+
+.footer_logo {
+  max-width: 120px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.footer_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }/*# sourceMappingURL=style.css.map */
