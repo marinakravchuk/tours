@@ -1,18 +1,14 @@
 .booking
+    padding: 100px
     background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
 
 .booking_wrapper
     display: flex
-    padding: 100px
     position: relative
-
-.booking_content
-    padding-top: 50px
-    padding-right: 150px
-    padding-left: 50px
-    padding-bottom: 50px
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 3.24%, rgba(255, 255, 255, 0.9) 88.76%)
-    clip-path: polygon(0 0, 100% 0, 58% 100%, 0% 100%)
+    background-image: url('./img/pexels-taryn-elliott.jpg')
+    background-size: cover
+    background-position: center
+    max-width: 1140px
 
 .booking_title
     font-style: normal
@@ -27,15 +23,83 @@
     text-fill-color: transparent
     padding-bottom: 30px
 
-.booking_box_img
-    max-width: 500px
+.booking_input_name,
+.booking_input_email
+    padding: 18px 210px 18px 33px
+    background: #FFFFFF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+    border-radius: 3px
+    border: none
+
+.booking_radio_btn
+    display: flex
+    flex-wrap: wrap
+    gap: 70px
+
+.booking_content_btn
+    background: #BA8554
+    border-radius: 50px
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 5px
+    color: #FFFFFF
+    padding: 15px 21px
+    border: none
+
+.booking_form_contact
+    padding-bottom: 50px
+    display: flex
+    flex-direction: column
+    gap: 50px
+
+.booking_form_choose
+    padding-bottom: 30px
+.booking_radio
     position: absolute
-    top: 0
-    right: 0
-    background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), center/cover no-repeat
-    clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%)
+    opacity: 0
+    cursor: pointer
 
-.booking_img
-    width: 100%
+.radio-icon
+    display: inline-block
+    position: relative
+    padding-left: 30px
+    margin-right: 15px
+    font-size: 16px
+    line-height: 20px
+    cursor: pointer
 
+    &:before
+        content: ''
+        display: inline-block
+        position: absolute
+        left: 0
+        top: 2px
+        width: 20px
+        height: 20px
+        border: 2px solid #ccc
+        border-radius: 50%
 
+    &:hover:before
+        border-color: #BA8554
+
+    .booking_radio:checked + &:before
+        border-color: #BA8554
+        background-color: #BA8554
+        box-shadow: inset 0 0 0 5px #fff
+
+.booking_radio_text
+    vertical-align: middle
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 2px
+    color: #777777
+
+.booking_content
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 3.24%, rgba(255, 255, 255, 0.9) 88.76%)
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%)
+    position: relative
+    padding: 50px 109px 50px 50px

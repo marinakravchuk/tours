@@ -124,7 +124,7 @@
                 <h3 class="menu_sub_title">ГРУППОВЫЕ <br> ТУРЫ</h3>
                 <ul class="menu_text_group">
                 <li class="menu_text">Группы от 6 человек</li>
-                <li class="menu_text">Продолжительность 2 час</li>
+                <li class="menu_text">Продолжительность 2 часа</li>
                 <li class="menu_text">В группе 1 гид</li>
                 <li class="menu_text">Дальность полета 6км</li>
                 <li class="menu_text">Бесплатные сувениры</li>
@@ -132,10 +132,10 @@
               </li>
               <li class="menu_item">
                 <img src="./img/Photo-cardtwo.png" alt="" class="menu_img" />
-                <h3 class="menu_sub_title">ЧАСТНЫЕ ТУРЫ</h3>
+                <h3 class="menu_sub_title">ЧАСТНЫЕ <br> ТУРЫ</h3>
                 <ul class="menu_text_group">
                   <li class="menu_text">Группы от 6 человек</li>
-                  <li class="menu_text">Продолжительность 2 час</li>
+                  <li class="menu_text">Продолжительность 2 часа</li>
                   <li class="menu_text">В группе 1 гид</li>
                   <li class="menu_text">Дальность полета 6км</li>
                   <li class="menu_text">Бесплатные сувениры</li>
@@ -143,10 +143,10 @@
               </li>
               <li class="menu_item">
                 <img src="./img/Photo-cardtree.png" alt="" class="menu_img" />
-                <h3 class="menu_sub_title">СМОТРОВЫЕ ПЛОЩАДКИ</h3>
+                <h3 class="menu_sub_title">СМОТРОВЫЕ  <br> ПЛОЩАДКИ</h3>
                 <ul class="menu_text_group">
                   <li class="menu_text">Группы от 6 человек</li>
-                  <li class="menu_text">Продолжительность 2 час</li>
+                  <li class="menu_text">Продолжительность 2 часа</li>
                   <li class="menu_text">В группе 1 гид</li>
                   <li class="menu_text">Дальность полета 6км</li>
                   <li class="menu_text">Бесплатные сувениры</li>
@@ -208,36 +208,35 @@
         </div>
       </section>
       <section class="booking">
-        <div class="conteiner">
+        <div class="conteiner booking_helper">
           <div class="booking_wrapper">
             <div class="booking_content">
               <h2 class="booking_title">ЗАБРОНИРОВАТЬ ТУР</h2>
               <form action="" class="booking_form">
-                <label>
-                  Имя:
-                  <input type="text" name="firstName" placeholder="Введите имя">
+                <div class="booking_form_contact">
+                <label for="booking_name" >
+                  <input class="booking_input_name" type="text" id="booking_name"  name="firstName&lastName" placeholder="Имя Фамилия">
                 </label>
-                
-                <label>
-                  Фамилия:
-                  <input type="text" name="lastName" placeholder="Введите фамилию">
+                <label for="booking_email">
+                  <input class="booking_input_email" type="email"  id="booking_email"  name="email" placeholder="Почтовый адрес">
                 </label>
-                <div>
-                  <input type="radio" id="booking_radio" class="booking_name" />
-                  <label for="booking_radio"><span class="booking_radio_text">Групповой тур</span></label
+              </div>
+              <div class="booking_radio_btn">
+                <div class="booking_form_choose">
+                  <input type="radio" id="booking_radio" class="booking_radio" />
+                  <label for="booking_radio" class="radio-icon"><span class="booking_radio_text">Групповой тур</span></label
                   >
                 </div>
-                <div>
-                  <input type="radio" id="booking_radio" class="booking_name" />
-                  <label for="booking_radio"><span class="booking_radio_text">Индивидуальный тур</span></label
+                <div class="booking_form_choose">
+                  <input type="radio" id="booking_radio_2" class="booking_radio" />
+                  <label for="booking_radio_2" class="radio-icon"><span class="booking_radio_text">Индивидуальный тур</span></label
                   >
                 </div>
+              </div>
                 <button class="booking_content_btn">ЗАБРОНИРОВАТЬ</button>
               </form>
             </div>
-            <div class="booking_box_img">
-              <img src="./img/pexels-taryn-elliott.jpg" alt="" class="booking_img" />
-            </div>
+            <div class="helper"></div>
           </div>
         </div>
       </section>
@@ -262,5 +261,6 @@
         </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
